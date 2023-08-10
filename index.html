@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/dash.css" />
+    <!-- Render All Css Elements -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Google Fonts => Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simple Dashboard</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sidebar">
+        <ul>
+          <li class="head">
+            <div class="logo">
+              <img src="./imgs/MeMac.jpg" alt="" />
+            </div>
+            <span>Fares</span>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user-group"></i>
+              <span>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-pied-piper"></i>
+              <span>Charts</sp>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-pen"></i>
+              <span>Posts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-star"></i>
+              <span>Favorits</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="log-out">
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Log-out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <!-- Start Header -->
+        <div class="header">
+          <span>dashboard</span>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- End Header -->
+        <!-- Start services -->
+        <div class="services">
+          <div class="box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <span>users</span>
+              <span class="number">100</span>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-pen"></i>
+            <div>
+              <span>posts</span>
+              <span class="number">34</span>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-brands fa-pied-piper"></i>
+            <div>
+              <span>products</span>
+              <span class="number">654</span>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <div>
+              <span>revenue</span>
+              <span class="number">$143</span>
+            </div>
+          </div>
+        </div>
+        <!-- End services -->
+        <!-- Start Products -->
+        <div class="products">
+          <div class="title">
+            <span>Products</span>
+            <i class="fa-solid fa-table-list"></i>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tv</td>
+                <td class="green"><span>$887</span></td>
+                <td class="yellow"><span>123</span></td>
+              </tr>
+              <tr>
+                <td>Labtop</td>
+                <td class="green"><span>$1267</span></td>
+                <td class="yellow"><span>23</span></td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td class="green"><span>$267</span></td>
+                <td class="yellow"><span>21</span></td>
+              </tr>
+              <tr>
+                <td>Wash Machine</td>
+                <td class="green"><span>$236</span></td>
+                <td class="yellow"><span>4</span></td>
+              </tr>
+              <tr>
+                <td>Keyboard</td>
+                <td class="green"><span>$12</span></td>
+                <td class="yellow"><span>$3556</span></td>
+              </tr>
+              <tr>
+                <td>Mouse</td>
+                <td class="green"><span>$63</span></td>
+                <td class="yellow"><span>100</span></td>
+              </tr>
+              <tr>
+                <td>Monitor</td>
+                <td class="green"><span>$2000</span></td>
+                <td class="yellow"><span>50</span></td>
+              </tr>
+              <tr>
+                <td>AirPods</td>
+                <td class="green"><span>$70</span></td>
+                <td class="yellow"><span>120</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Products -->
+      </div>
+    </div>
+  </body>
+</html>

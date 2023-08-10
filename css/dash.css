@@ -1,0 +1,208 @@
+/* Start Globar Variables */
+:root {
+  --mainColor: #111f2d;
+  --secondryColor: #0074f5;
+  --greenColor: #026607;
+  --yellorColor: #c4a30a;
+  --backgroundColor: #001;
+  --redColor: #730001;
+}
+/* End Globar Variables */
+/* Start Globar Rules */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+/* End Globar Rules */
+/* Start Page */
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+/* End Page */
+/* Start Sidebar */
+.sidebar {
+  width: 60px;
+  padding: 20px;
+  background-color: var(--mainColor);
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+@media(max-width:767px) {
+  .sidebar {
+    min-width: 52px;
+  }
+}
+@media(min-width:1200px) {
+  .sidebar:hover {
+    width: 260px;
+  }
+}
+.sidebar .head {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.sidebar .head .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sidebar .head .logo img {
+  width: 100%;
+}
+.sidebar ul {
+  height: 95%;
+  position: relative;
+}
+.sidebar ul li a {
+  display: block;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-radius: 6px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+@media(max-width:767px) {
+  .sidebar ul li a span {
+    display: none;
+  }
+}
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.log-out a {
+  background-color: var(--redColor);
+}
+.sidebar ul li a:hover,
+.active {
+  background-color: #56616b;
+  
+}
+.sidebar ul li a i {
+  font-size: 30px;
+}
+/* End Sidebar */
+/* Start Content */
+.content {
+  background-color: var(--backgroundColor);
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0074f5;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.services .box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--mainColor);
+  height: 150px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  flex-grow: 1;
+  flex-basis: 150px;
+}
+@media(max-width:767px) {
+  .services .box {
+    flex-basis: 100px;
+  }
+}
+.services .box:hover {
+  background-color: #56616b;
+}
+.services .box div {
+  text-align: center;
+}
+.services .box .number {
+  font-size: 30px;
+  display: block;
+}
+.services .box i {
+  font-size: 40px;
+}
+/* End Services */
+/* Start Products */
+.products .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0074f5;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.products table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 10px;
+}
+@media(max-width:767px) {
+  .products table {
+    border-spacing: 2px;
+  }
+}
+.products table tr td,
+th {
+  background-color: var(--mainColor);
+  padding: 10px;
+  border-radius: 6px;
+  height: 39px;
+  cursor: pointer;
+}
+.products table thead tr th {
+  background-color: #0074f5;
+}
+.products table tbody tr td:hover {
+  background-color: #56616b;
+}
+.products table tbody tr .green span {
+  background-color: var(--greenColor);
+  padding: 6px;
+  border-radius: 4px;
+}
+.products table tbody tr .yellow span {
+  background-color: var(--yellorColor);
+  padding: 6px;
+  border-radius: 4px;
+  color: black;
+}
+/* End Products */
+/* End Content */
